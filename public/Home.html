@@ -6,9 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Ninja</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 </head>
 
-<body class="text-blue-700">
+<body class="text-gray-600 flex bg-pink-200">
     <div>
         <div>
             <nav>
@@ -50,7 +71,7 @@
                     <div>
 
                         <span>Chicken Biryani</span>
-                        <span>Recipe by Heamanth</span>
+                        <span>Recipe by Hemanth</span>
                     </div>
                 </div>
             </div>
